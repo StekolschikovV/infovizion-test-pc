@@ -5,22 +5,29 @@ const {app, BrowserWindow} = require('electron')
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
-const electron = require('electron')
-// Enable live reload for Electron too
-require('electron-reload')(__dirname, {
-    // Note that the path to electron may vary according to the main file
-    electron: require(`${__dirname}/node_modules/electron`)
-});
+// const electron = require('electron')
+// // Enable live reload for Electron too
+// require('electron-reload')(__dirname, {
+//     // Note that the path to electron may vary according to the main file
+//     electron: require(`${__dirname}/node_modules/electron`)
+// });
 
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1200, height: 800, frame: false})
+  mainWindow = new BrowserWindow(
+    {
+      width: 1200, 
+      height: 800, 
+      frame: false,
+      // icon: __dirname + '/assets/icons/png/favicon.png'
+    }
+  )
   mainWindow.setMenu(null)
   mainWindow.setAutoHideMenuBar(false)
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 

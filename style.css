@@ -1,1 +1,61 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+body iframe {
+  width: 100vw;
+  height: 100vh;
+  border: 0;
+}
+
+body #title-bar {
+  -webkit-app-region: drag;
+  height: 24px;
+  background-color: #2f7fc3;
+  color: white;
+  padding: none;
+  margin: 0px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+body #title-bar #title-bar-btns {
+  line-height: 1;
+}
+
+body #title-bar #title-bar-btns button {
+  -webkit-app-region: no-drag;
+  border: 0;
+  height: 25px;
+  width: 25px;
+  font-size: 20px;
+  color: white;
+  background: #9cbad4;
+  cursor: pointer;
+}
+
+body #title-bar #title-bar-btns button:hover, body #title-bar #title-bar-btns button:active {
+  background: #5588b5;
+}
+
+body #title-bar #title-bar-btns #close-btn {
+  background: #f53b3b;
+}
+
+body #title-bar #title-bar-btns #close-btn:hover, body #title-bar #title-bar-btns #close-btn:active {
+  background: #c00a0a;
+}
+/*# sourceMappingURL=style.css.map */
